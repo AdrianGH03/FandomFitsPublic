@@ -10,6 +10,8 @@ Features:
 - Login, Signup, Forgot password functions.
 - Input form validations
 - Enabled user account modifications
+- Functional search bar
+- Clothing item category filters
 
 Link to Site:
 https://fandom-fits.vercel.app
