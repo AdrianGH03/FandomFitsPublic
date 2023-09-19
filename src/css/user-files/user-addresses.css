@@ -1,0 +1,207 @@
+.address-book-container{
+    padding: 20px;
+    margin: 20px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-top: -0.5rem;
+}
+.address-book-container div h4, .address-book-container div span,
+.address-book-container div a
+{
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+}
+.address-book-container div h4{
+    font-size: 0.8rem;
+}
+.address-book-container div a{
+    font-size: 0.6rem;
+    text-decoration: underline;
+    color: rgb(223, 222, 222);
+}
+.user-address, .user-addresses, .user-address-container, .address-book-container{
+    min-width: 100%;
+    
+}
+.user-address-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    min-width: 100%;
+}
+.user-address-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+}
+.address-book-container div span{
+    font-size: 0.55rem;
+}
+.user-address-container{
+    margin-bottom: 4rem;
+}
+.address-book-container > a{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    
+}
+.user-address{
+    margin: 2rem 0;
+}
+.user-address-header a{
+    max-width: 70px;
+}
+.user-dashboard-info-address, .user-dashboard-info-address-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+}
+
+
+
+
+/**************
+* New Address Page
+**********/
+.address-new-container{
+  padding: 20px;
+  padding-top: 0;
+  padding-right: 0;
+  margin-top: -0.5rem;
+}
+
+.address-new-form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.address-new-form-group.divider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1rem;
+}
+.address-new-form-group > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+    overflow-x: hidden;
+}
+.address-new-form-group > div > label {
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+}
+.address-new-form-group.divider > div > input {
+    max-width: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-family: 'Anton', cursive;
+    font-size: 0.85rem;
+}
+.address-new-form-group.divider > div > input::placeholder {
+    color: white;
+}
+.address-new-form-group.divider > div > div{
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+    justify-content: flex-end;
+}
+.address-new-form-group.divider > div > div label{
+    margin-top: -0.3rem;
+}
+.address-new-form-group.divider > div > div select{
+    background-color: black;
+    border: none;
+    padding: 10px 10px;
+    color: white;
+    font-family: 'Anton';
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+    padding-bottom: 9px;
+}
+
+.address-new-form-group.solo  {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.address-new-form-group.solo label{
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+}
+.address-new-form-group.solo input{
+    max-width: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-family: 'Anton', cursive;
+    font-size: 0.85rem;
+}
+    
+
+.address-new-container button{
+    margin-top: 4rem;
+    background-color: rgb(23, 14, 73);
+    border: 2px solid white;
+    padding: 1rem;
+    color: white;
+    font-family: 'Anton';
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 100%;
+    line-height: 1.5rem;
+}
+.address-new-container button.delete-button{
+    background-color: rgb(129, 7, 7);
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    line-height: 1.5rem;
+}
+p.error.e-address{
+    margin-bottom: -1.5rem;
+    margin-top: 2rem;
+}
+p.success.s-address{
+    margin-bottom: -1.5rem;
+    margin-top: 2rem;
+}
+
+@media(min-width: 500px){
+    .user-address-header a{
+        padding-left: 10rem;
+        max-width: 100%;
+    }
+}
+@media(min-width: 800px){
+    .user-address-header a{
+        padding-left: 20rem;
+        
+    }
+}
+@media(min-width: 1024px){
+    
+    .address-new-form-group.solo input,
+    .address-new-form-group.divider > div > div select,
+    .address-new-form-group.divider > div > input{
+        font-size: 0.9rem;
+    }
+}
+  
+
+
+  

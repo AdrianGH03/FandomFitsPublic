@@ -1,0 +1,29 @@
+.error-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    line-height: 3rem;
+}
+.error-page a{
+    color: rgb(13, 33, 218);
+    text-decoration: none;
+    
+}
+.error{
+    color: red;
+    line-height: 2rem;
+}
+.success{
+    color: rgb(142, 228, 84);
+    line-height: 2rem;
+    margin-bottom: -1rem;
+    text-align: left;
+    max-width: 500px;
+    
+}
+.success.maxaddr{
+    text-align: left;
+}

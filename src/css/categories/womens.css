@@ -1,0 +1,362 @@
+.categoryTitle{
+    display: flex;
+    justify-content: center;
+}
+.categoryTitle h1{
+    text-align: center;
+    padding: 1rem 0;
+    background: rgb(0, 0, 0);
+    margin-top: 2rem;
+    border: 2px solid white;
+    width: 60%;
+}
+/**********************
+* DROP-DOWNS GENERAL
+**********************/
+.dropDowns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropDowns label:hover{
+    background: rgb(46, 0, 0);
+    cursor: pointer;
+}
+.hideForMobile{
+    display: none;
+    
+}
+/**********************
+* DROP-DOWNS MENUS
+**********************/
+.dropDowns ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; 
+  
+}
+#dropdown, #dropdown2, #dropdown3, 
+#dropdown4, #dropdown5, #dropdown6,
+#dropdown7, #dropdown8 {
+  display: none;
+  
+}
+.dropdownLabel {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1.3rem;
+  transition: background-color 0.3s ease;
+  background-color: black;
+}
+
+#dropdown:checked + .dropdownLabel {
+  background-color: #ccc;
+}
+.arrow::after {
+  content: "+";
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+#dropdown:checked + .arrow::after,
+#dropdown2:checked + .arrow::after,
+#dropdown3:checked + .arrow::after,
+#dropdown4:checked + .arrow::after,
+#dropdown5:checked + .arrow::after, 
+#dropdown6:checked + .arrow::after,
+#dropdown7:checked + .arrow::after, 
+#dropdown8:checked + .arrow::after {
+  transform: rotate(45deg);
+}
+
+#dropdown:checked ~ .dropdown-menu,
+#dropdown2:checked ~ .dropdown-menu,
+#dropdown3:checked ~ .dropdown-menu,
+#dropdown4:checked ~ .dropdown-menu,
+#dropdown5:checked ~ .dropdown-menu,
+#dropdown6:checked ~ .dropdown-menu,
+#dropdown7:checked ~ .dropdown-menu, 
+#dropdown8:checked ~ .dropdown-menu{
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  list-style-type: none;
+  left: 0;
+  padding: 0rem 0rem 0rem 2rem;
+  background-color: rgb(27, 27, 27);
+}
+.dropdown-menu.show {
+  display: block;
+  
+}
+.dropdown-menu li {
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+}
+
+.dropdown-menu li:last-child {
+  padding-bottom: 1.5rem;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: white;
+  padding-right: 10rem; /*change for diff screens*/
+}
+
+.dropDowns > ul {
+  list-style-type: none;
+  padding: 0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.dropDowns > ul > li {
+  border-bottom: 2px solid #fff;
+}
+
+.dropDowns > ul > li:last-child {
+  border-bottom: none;
+}
+
+/**********************
+* DROP-DOWNS IMAGES
+**********************/
+.dropDowns > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.dropDowns > div img{
+    min-width: 18.5rem;
+    max-width: 18.5rem;
+    text-align: center;
+    min-height: 20.5rem;
+    max-height: 20.5rem;
+    margin-bottom: -1.8rem;
+}
+.dropDowns > div{
+    margin: 2rem 0;
+}
+.dropDowns > div:first-child{
+    margin-top: 0;
+}
+.dropDowns{
+    margin: 2rem 0;
+}
+.dropDowns > div .description{
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem;
+}
+.dropDowns > div .description:hover{
+    background: rgba(0, 0, 0, 1);
+}
+.dropDowns > div.storeLogos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4rem 1rem;
+    padding-top: 2rem;
+    min-width: 100%;
+    
+    background: rgb(0, 0, 15);
+}
+.dropDowns > div.storeLogos img{
+    min-width: 5rem;
+    max-width: 5rem;
+    min-height: 1rem;
+    max-height: 5rem;
+    opacity: 0.4;
+    position: relative;
+    z-index: 1;
+}
+.dropDowns > div.storeLogos img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.dropDowns > div.dropDowns-title{
+    text-align: right;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    margin-bottom: -1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 1rem;
+}
+@media(min-width: 390px){
+    .dropDowns > div img{
+        min-width: 20rem;
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+}
+@media(min-width: 680px){
+    /****************
+    from mobile
+    ****************/
+    .dropDowns > ul {
+        margin-left: 0rem; 
+        width: 100%;   
+    }
+    .dropDowns  label{
+        padding: 1.5rem 0;
+    }
+    .dropdown-menu a {
+        font-size: 0.6rem;
+        padding-right: 2rem; /*change for diff screens*/
+    }
+    .dropdownLabel {
+        font-size: 0.8rem;
+    }
+    /****************
+    change display
+    ****************/
+    .dropDowns.hideForDesktop{
+        display: none;
+    }
+    .mainContentDesktop.hideForMobile{
+        display: flex;
+        margin-top: 2rem;
+        min-width: 100%;
+        justify-content: center;
+    }
+    .rowSection > div, .bannerSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .dropDowns-main-desktop{
+        padding-left: 2rem;
+    }
+    .dropDowns{
+        margin-left: 1rem;
+    }
+
+    /****************
+    desktop display
+    ****************/
+    .desktopTitle{
+        text-align: right;
+        font-size: 0.7rem;
+        line-height: 1rem;
+        width: 90%;
+        margin-top: -1rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        padding-right: 1rem;
+    }
+    .describe{
+        color: white;
+        text-decoration: none;
+        background: rgba(0,0,0,0.4);
+        text-align: center;
+        padding: 0.5rem 0;
+        
+    }
+    div a.describe{
+        font-size: 0.8rem;
+    }
+    .rowSection {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    .rowSection div {
+      position: relative;
+    }
+    .bannerSection img{
+        min-width: 90%;
+        max-width: 90%; /*change*/
+    }
+    .rowSection div img {
+      max-width: 80%; /*change*/
+      max-height: auto;
+    }
+    .rowSection div .describe,
+    .bannerSection .describe {
+        
+        width: 80%;
+        position: relative;
+        top: -50%;
+        color: white;
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 0.5rem 1rem;
+        font-size: 0.1rem; /*change*/
+        white-space: nowrap;
+        transition: all 0.2s ease;
+    }
+    .rowSection div .describe:hover{
+        background: rgba(0,0,0,1);
+    }
+    .bannerSection .describe:hover{
+        background: rgb(32, 32, 32);
+    }
+    .bannerSection .describe{
+        width: 90%;
+        font-size: 0.1rem; /*change*/ 
+    }
+
+    .storeLogosDesktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0 7rem;
+        padding: 2rem 1rem;
+        padding-top: 2rem;
+        background: rgb(0, 0, 15);
+        width: 90%;
+    }
+    .storeLogosDesktop img{
+        min-width: 2rem;
+        max-width: 2rem;
+        max-height: 2rem;
+        opacity: 0.4;
+        position: relative;
+        z-index: 1;
+    }
+    .storeLogosDesktop img:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .bannerSection.middlebanner{
+        margin-top: 2rem;
+    }
+    
+
+
+}
+@media(min-width: 820px){
+    .dropdown-menu a {
+        font-size: 0.9rem;
+        padding-right: 2rem; /*change for diff screens*/
+    }
+    .dropDown label{
+        margin-left: 1rem;
+    }
+    .dropdownLabel {
+        font-size: 1rem;
+    }
+    .rowSection div .describe,
+    .bannerSection .describe {
+        font-size: 1rem;
+    }
+}
+@media(min-width: 1024px){
+    .hideForMobile{
+        display: block;
+    }
+    .rowSection div .describe,
+    .bannerSection .describe {
+        font-size: 1.5rem;
+    }
+}

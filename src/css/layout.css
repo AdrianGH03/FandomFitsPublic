@@ -1,0 +1,644 @@
+
+  
+  body{
+     background-image: linear-gradient(to top, #0a2b44 0%, #010811 100%);
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+     color: white;
+     font-family: 'Press Start 2P', cursive;
+     
+  }
+  button{
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+  }
+  #sales-pitch a{
+    color: white;
+  }
+  a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar {
+    width: 1px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0); 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0); 
+    border-radius: 3px; 
+  }
+  body,html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  @media (min-width: 240px){
+    .hide, .hideForMobile{
+      display: none;
+    }
+    #accessoriespagehone{
+      font-size: 1rem;
+    }
+    header {
+      position: fixed;
+      margin-top: -5rem;
+      min-width: 100vw;
+      background: black;
+      z-index: 999;
+    }
+    
+    #menuToggle{
+      display: block;
+      position: relative;
+      top: 30px;
+      max-width: 30px;
+      margin-left: 1rem;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    #menuToggle a{
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s ease;
+    }
+    #menuToggle a:hover{
+      color: rgb(216, 216, 216);
+    }
+    #menuToggle input{
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0; 
+      z-index: 2; 
+      -webkit-touch-callout: none;
+    }
+    #menuToggle span{
+      display: block;
+      width: 25px;
+      height: 2px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #cdcdcd;
+      border-radius: 3px;
+      
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+      
+    }
+    #menuToggle span {
+      display: block;
+      position: relative;
+      
+    }
+  
+    #menu{
+      position: absolute;
+      width: 70vw;
+      height: 108vh;
+      margin: -100px 0 0 -58px;
+      padding: 3rem;
+      margin-left: -1rem;
+      padding-top: 125px;
+      background: black;
+      background-attachment: fixed;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      overflow-y: scroll;
+    }
+    #menu li {
+      box-sizing: border-box; 
+      padding: 1rem 0rem; 
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      margin-top: 1rem;
+      margin-left: 0rem;
+      background: #04101a;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      font-family: 'Anton', sans-serif;
+    }
+    #menu .menuFirst{
+      margin-top: -1rem;
+    }
+    #menu .menuHead div{
+      background: linear-gradient(black 90%, black 10%);
+      padding: 0;
+      margin: -7rem -3rem -5rem -3rem;
+      min-width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    #menu .menuHead div h1{
+      
+      font-family: 'Press Start 2P', cursive;
+    }
+    #menu .firstCat{
+      margin-top: -2rem;
+    }
+    #menu .menuHead{
+      background: none;
+      font-size: 1.5rem;
+    }
+    #menu .brandName{
+      background: none;
+      font-size: 0.9rem;
+      line-height: 2rem;
+      font-family: 'Press Start 2P', cursive;
+      margin: -0.5rem 0 -2rem 0;
+    }
+    #menuToggle input:checked ~ ul{
+      transform: none;
+    }
+    .user-navigation-mobile{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 2rem;
+      background-color: black;
+    }
+    #menu li.user-nav{
+      padding: 0;
+      margin-top: -2rem;
+      margin-bottom: 2rem;
+    }
+    /**************
+    * Hamburger Menu Div + title
+    **************/
+    .title{
+      padding-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .title h1{
+      font-size: 1rem;
+    }
+    .title a{
+      text-decoration: none;
+      color: white;
+    }
+    /* *************
+    * Theme Selection
+    **************/
+    .themeDropDown{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem 0;
+      margin: 5rem 0 0rem 0;
+      padding: 1.5rem 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    #themeSelect{
+      padding: 0.5rem;
+      background: black;
+      color: white;
+      font-family: 'Anton', sans-serif;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 1px solid black;
+      border-radius: 4px;
+      
+    }
+    .themeSelect::-ms-expand {
+      display: none;
+    }
+    .modalContent {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 4px;
+      z-index: 1;
+    }
+    
+    .sale-container{
+      background: rgb(22, 22, 22);
+      padding: 1rem 0;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.5rem;
+      background: url('/Images/menuImages/menuHats.jpg'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+      
+      
+    }
+    
+    .sale-container h1{
+      padding: 0.5rem 1rem; 
+      background-color: black;
+      border: 3px solid white;
+      font-size: 0.5rem;
+    }
+    .SHOP{
+      text-align: center;
+    }
+    
+    /**************
+    * Main Display SHOPS
+    **************/
+    .mainDisplay{
+      margin-top: 2rem;
+    }
+    .mainShop{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .mainShop img{
+      max-width: 17rem;
+      border: 3px solid white;
+    }
+    .mainShop a + a{
+      text-decoration: none;
+      color: white;
+      margin-top: -4rem;
+      background: rgba(0, 0, 0, 0.6);
+      
+      
+      min-height: 3rem;
+      min-width: 17rem;
+      max-width: 20rem;
+      max-height: 10rem;
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .mainShop a + a:hover{
+      background: rgba(0, 0, 0, 0.8);
+    }
+     /**************
+    * Contact (Footer)
+    **************/
+    .contact{
+      width: 100%;
+      background: #061a29;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 2px solid white;
+    }
+    .contact ul{
+      list-style-type: '\003E';
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem 0;
+      line-height: 1.5rem;
+    }
+    
+    .contact > ul{
+      margin-bottom: 2rem;
+     
+    }
+    .contact > ul > h1{
+      line-height: 3rem;
+      font-size: 1.5rem;
+    }
+    .contact a{
+      text-decoration: none;
+      color: white;
+      padding-left: 0.5rem;
+    }
+    .socials{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 0 1rem;
+      padding: 2rem 0;
+      border-top: 2px solid white;
+    }
+    .socials img{
+      max-width: 1.7rem;
+    }
+    .explore{
+      border-top: 2px solid white;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      padding-bottom: 3rem;
+    }
+    .explore h1{
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    .explore li a{
+      font-size: 0.8rem;
+    }
+     /**************
+    * Footer
+    **************/
+    footer{
+      width: 100%;
+      display: flex;
+      padding: 0 3rem 0 2rem;
+      gap: 0 3rem;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      background: black;
+    }
+    footer > div{
+      display: flex;
+      flex-direction: column;
+      line-height: 1.5rem;
+    }
+    footer > div > h4{
+      font-size: 0.55rem;
+      text-align: center;
+    }
+  }
+  @media(min-width: 500px){
+    #menu{
+      width: 60vw;
+    }
+    /**************
+    * Main Display SHOPS
+    **************/
+    .mainDisplay {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .mainShop {
+      flex: 0 0 calc(33.33% - 2rem);
+      margin: 1rem;
+      margin-bottom: 3rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+    .mainShop:last-child {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+    .mainShop img {
+      min-width: 13rem;
+      max-width: 13rem;
+      min-height: 13rem;
+      max-height: 13rem;
+    }
+    
+    .mainShop a + a {
+      min-height: 3rem;
+      min-width: 13rem;
+      max-width: 20rem;
+      max-height: 10rem;
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .explore{
+      align-items: center;
+    }
+  }
+  @media(min-width: 679px){
+    #accessoriespagehone{
+      font-size: 2rem;
+    }
+    .fandomFitsTitle{
+      display: flex;
+      justify-content: center;
+      background: url('/Images/stickerWallpaper.jpg'); 
+      border-top: 2px solid white;
+      margin-top: 5rem;
+    }
+    .fandomFitsTitle h1{
+      background-color: black;
+      padding: 1rem;
+    }
+    
+    #menu{
+      width: 40vw;
+    }
+    #search-input {
+      flex-grow: 0.3; 
+    }
+   /**************
+    * Contact (Footer)
+    **************/
+    .contact{
+      flex-direction: row;
+      gap: 0 1rem;
+      font-size: 0.6rem;
+      justify-content: center;
+    }
+    .contact > ul{
+      margin-top: -2.5rem;
+      margin-left: -3rem;
+      
+    }
+    
+    .socials{
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem 1rem;
+      width: 30%;
+      border-top: none;
+    }
+    .socials img{
+      max-width: 3rem;
+    }
+    .explore{
+      border-top: none;
+      font-size: 0.6rem;
+      width: auto;
+      
+    }
+    footer{
+      justify-content: center;
+    }
+    .sale-container{
+      
+      background-size: cover;
+      background-repeat: repeat;
+      background-position: right -200px top -50px;
+      
+    }
+  }
+  @media(min-width: 1024px){
+    header {
+      margin-top: -7rem;
+      display: flex;
+      justify-content: center;
+    }
+    .sale-container h1{
+      
+      font-size: 0.9rem;
+    }
+    .hideForDesktop{
+      display: none;
+    }
+    .hideForMobile{
+      display: flex;
+    }
+    nav.hideForMobile{
+      margin-right: 2rem;
+      
+    }
+    .user-navigation.hideForMobile{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0 2rem;
+    }
+    .user-navigation.hideForMobile:hover{
+      cursor: pointer;
+    }
+    .titleA{
+      margin-right: 1rem;
+    }
+    .desktopList{
+      display: flex;
+      list-style-type: none;
+      gap: 0 0rem;
+    }
+    .desktopList li a{
+      text-decoration: none;
+      color: white;
+      padding: 1rem 0;
+    }
+    ul li a.titleA{
+      white-space: nowrap;
+    }
+    .desktopList li a:hover{
+      border-bottom: 2px solid white;
+    }
+    .desktopList .titleA{
+      padding: 0;
+    }
+    .desktopList li a.titleA:hover{
+      border-bottom: none;
+    }
+    .desktopList li{
+      padding: 0rem 1rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .desktopList li h1{
+      border: 1px solid white;
+      padding: 1rem 0.3rem;
+      margin-left: -2rem;
+    }
+    .firstCat{
+      margin-left: -1.5rem;
+    }
+    .themeDropDown{
+      background-position-y: 40%;
+      margin: 7rem 0 0rem 0; /*watch out for this*/
+      padding-bottom: 5rem;
+    }
+    .mainShop img {
+      min-width: 18rem;
+      max-width: 18rem;
+      min-height: 18rem;
+      max-height: 18rem;
+    }
+    footer > div > h4{
+      justify-content: center;
+      font-size: 1rem;
+      border-bottom: 1px solid white;
+      padding-bottom: 1rem;
+    }
+  }
+  
+  @media (min-width: 1280px){
+    .desktopList li{
+      font-size: 16px;
+    }
+    header{
+      margin-top: -8rem;
+    }
+    .themeDropDown{
+      margin: 8rem 0 0rem 0;
+    }
+    .mainShop img {
+      min-width: 25rem;
+      max-width: 25rem;
+      min-height: 25rem;
+      max-height: 25rem;
+    }
+    .sale-container{
+      background-position: right -200px top -110px;
+    }
+  }
+  @media(min-width: 1440px){
+    .mainShop img {
+      min-width: 25rem;
+      max-width: 25rem;
+      min-height: 25rem;
+      max-height: 25rem;
+    }
+    .mainDisplay{
+      padding: 0 15rem;
+    }
+    .mainShop a + a{
+      
+      min-height: 3rem;
+      min-width: 20rem;
+      max-width: 20rem;
+      max-height: 10rem;
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    #themeSelect{
+      padding: 1rem 2rem;
+    }
+    #search-input {
+      text-align: center;
+      flex-grow: 0.2  ; 
+      border: 5px solid white;
+    }
+    .explore, .contact{
+      font-size: 0.8rem;
+    }
+    footer{
+      justify-content: space-around;
+    }
+    
+  }
+  
+  

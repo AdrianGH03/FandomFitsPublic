@@ -1,0 +1,176 @@
+
+
+.signup-page{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.signup-content > h1{
+    font-size: 1.4rem;
+}
+/***********************
+* User Sign up forms
+******************/
+.signup-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem 0;
+    color: white;
+    margin-bottom: 3rem;
+}
+.signup-content input, .signup-content select{
+    background-color: black;
+    border: none;
+    padding: 1rem;
+    color: white;
+    font-family: 'Anton';
+    width: 100%;
+}
+
+.signup-content > div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem 0;
+    
+}
+
+.signup-content > div input{
+    border: 2px solid white;
+}
+.emailInput, .countries-dropdown div select{
+    width: 100%;
+}
+.countries-dropdown div select{
+    border: 2px solid white;
+}
+.birth-date input{
+    width: 33%;
+}
+.countries-dropdown div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+}
+.signup-content button{
+    background-color: rgb(23, 14, 73);
+    border: 2px solid white;
+    padding: 1rem;
+    color: white;
+    font-family: 'Anton';
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+.signup-content button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+
+
+
+/***********************
+* Sign up reasons to the right or below
+******************/
+.signup-reasons-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+    
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.signup-reasons-list h1{
+    font-size: 1.5rem;
+}
+.signup-reason{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    width: 50%;
+    
+}
+
+.signup-reason h2{
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+.signup-reason p{
+    font-size: 1rem;
+    color: rgb(230, 230, 230);
+    font-family: 'Anton', cursive;
+}
+
+
+/***********************
+* Send user back to login
+******************/
+.have-account{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem 0;
+}
+.have-account h1{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}
+.have-account a{
+    text-decoration: none;
+    padding: 1rem 4rem;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+@media(min-width: 240px){
+    .signup-page{
+        flex-direction: column;
+    }
+    .signup-content{
+        width: 100%;
+    }
+}
+@media(min-width: 500px){
+    
+}
+@media(min-width: 1024px){
+    .signup-page{
+        flex-direction: row;
+    }
+    .signup-content{
+        width: 50%;
+        
+    }
+    .signup-content input, .signup-content select{
+        
+        width: 50%;
+    }
+    .emailInput, .countries-dropdown div select{
+        width: 50%;
+    }
+    
+    .birth-date input{
+        width: 33.3%;
+    }
+}
+@media (min-width: 1280px){
+
+}
+@media (min-width: 1440px){
+
+}

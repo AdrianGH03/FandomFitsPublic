@@ -1,0 +1,49 @@
+.user-navigation-mobile > a, .user-navigation.hideForMobile > a{
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+    margin-left: 0rem;
+}
+.user-navigation-mobile > a{
+    padding: 0.1rem 1rem;
+}
+.user-navigation.hideForMobile > a{
+    padding: 0.5rem 1rem;
+}
+.profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 6rem;
+    margin-left: 0rem;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    gap: 1rem 0;
+}
+.profile-dropdown a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.profile-dropdown a:hover{
+    text-decoration: underline;
+}
+.profile-dropdown button{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    border: 2px solid white;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+
+}
+.profile-dropdown button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s ease-in-out;
+}

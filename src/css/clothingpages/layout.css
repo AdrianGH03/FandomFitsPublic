@@ -1,0 +1,146 @@
+.pagination-buttons{
+    margin-bottom: 20rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    gap: 1rem;
+}
+.pagination-buttons button{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.dropDowns.hideForDesktop .clothing-items-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+    margin-top: 3rem;
+    
+}
+.clothing-item{
+    border: 2px solid white;
+    padding: 1rem;
+    background-color: rgb(1, 2, 51);
+    max-width: 250px;
+}
+.clothing-item .clothing-item-img-mobile img{
+    max-width: 210px;
+    min-width: 210px;
+    max-height: 200px;
+    min-height: 200px;
+
+}
+.clothing-item-img{
+    
+    background-color: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clothing-item-details{
+    max-width: 300px;
+    text-align: center;
+    line-height: 1.3rem;
+    display: flex;
+    height: 140px;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+.clothing-item-details h5{
+    font-size: 0.6rem;
+    min-height: 1rem;
+    max-height: 1rem;
+    margin-bottom: 2rem;
+}
+
+.clothing-item-details div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+}
+.clothing-item-details div span{
+    font-size: 0.7rem;
+    color: rgb(223, 223, 223);
+}
+.clothing-item-details div a{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+.clothing-item-details div a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.clothing-item-img-mobile img{
+    padding: 1rem;
+    background-color: white;
+}
+@media(min-width: 750px){
+    .pagination-buttons{
+        margin-left: 12rem;
+    }
+    .clothing-items-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 60%;
+        gap: 1rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+    .clothing-item{
+        border: 2px solid white;
+        padding: 1rem;
+        background-color: rgb(1, 2, 51);
+        max-width: 100%;
+    }
+    .clothing-item-img{
+        max-width: 300px;
+        height: 300px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .clothing-item-img img{
+        max-width: 150px;
+        max-height: 150px;
+        
+    }
+    .clothing-item-details{
+        margin-top: 1rem;
+    }
+    .dropDowns ul li label.dropdownLabel a{
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        min-width: 100%;
+    }
+    
+}
+@media(min-width: 1024px){
+    .clothing-item-img img{
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .pagination-buttons{
+        margin-left: 15rem;
+    }
+}
+@media(min-width: 1500px){
+    .clothing-items-container{
+        
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}

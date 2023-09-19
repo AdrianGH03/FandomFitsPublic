@@ -1,0 +1,117 @@
+.dd-user input[type=checkbox].hidden{
+    opacity: 0;
+  }
+.dd-user ul ul li{
+    line-height: 1.5rem;
+}
+.dd-user{
+    margin-bottom: 0;
+}
+.dd-user button{
+    padding: 0.5rem 3rem;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    margin-top: 1.5rem;
+}
+.dd-user button a{
+    padding: 0;
+}
+.dd-user ul li > label{
+    padding-left: 1rem;
+}
+.dd-user ul li label > span{
+    padding-right: 2rem;
+}
+.account-info-container {
+    margin: 20px;
+    padding: 20px;
+    margin-top: -1rem;
+    padding-top: 0;
+    line-height: 1.5rem;
+}
+.account-info-container .error{
+    color: red;
+    font-size: 0.8rem;
+    max-width: 500px;
+    line-height: 1.5rem;
+    
+    margin-bottom: -2rem;
+}
+.account-info-container label{
+    font-size: 0.7rem;
+    white-space: nowrap;
+}
+
+.account-info-group {
+  display: flex;
+  flex-wrap: wrap; 
+  margin-bottom: 10px;
+  gap: 1rem;
+}
+.account-info-group input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Anton', cursive;
+    font-size: 1rem;
+}
+
+.account-info-group input::placeholder{
+    color: white;
+    
+}
+.account-info-group > div {
+  flex: 1; 
+  margin-right: 10px; 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.account-user-dob {
+  display: flex;
+  gap: 5px;
+}
+
+.account-user-dob input {
+  width: 70px; 
+}
+
+.account-user-password > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.account-user-password > div div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.account-user-password input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+}
+.account-user-password input::placeholder{
+    color: white;
+}
+.account-info-container button{
+    margin-top: 60px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+
+
