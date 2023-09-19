@@ -12,6 +12,8 @@ Features:
 - Enabled user account modifications
 - Functional search bar
 - Clothing item category filters
+- View item page for each clothing item.
+- Add to favorites and add to cart buttons
 
 Link to Site:
 https://fandom-fits.vercel.app
