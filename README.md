@@ -1,32 +1,54 @@
-# FandomFitsPublic
+# 🛍️ FandomFits
 
-Fandom Fits is a mock e-commerce site with full functionality that allows consumers/users to shop for clothing items from their favorite fandoms.
+**FandomFits** is a mock e-commerce web application built to deliver a smooth and stylish shopping experience for fans of various fandoms. With full frontend functionality and clean UI, users can browse, filter, and manage clothing items across multiple categories — all tailored for fans!
 
-Features:
-- User account (Dashboard, orders, account information, favorites, addresses)
-- Multiple Clothing Categories (Kids, Mens, Womens, Accessories, Shoes, Pants, etc.)
-- Cart and Favorite Items functionality
-- Mock checkout page and functional orders page (found in user dashboard)
-- Login, Signup, Forgot password functions.
-- Input form validations
-- Enabled user account modifications
-- Functional search bar
-- Clothing item category filters
-- View item page for each clothing item.
-- Add to favorites and add to cart buttons
+🔗 **Live Site:** [https://fandom-fits.vercel.app](https://fandom-fits.vercel.app)
 
-Link to Site:
-https://fandom-fits.vercel.app
+---
 
-Ex. Page:
+## 🚀 Features
+
+- 🔐 **User Accounts**
+  - Dashboard with account details
+  - Order history
+  - Favorite items
+  - Address book
+
+- 🧥 **Product Categories**
+  - Kids, Mens, Womens, Accessories, Shoes, Pants, and more
+
+- 🛒 **E-commerce Essentials**
+  - Add to Cart and Favorites
+  - Mock Checkout experience
+  - Functional Orders Page
+
+- 🧠 **User Experience**
+  - Login, Signup, Forgot Password flows
+  - Input form validations
+  - Modify account information
+  - Filter items by category
+  - Search bar functionality
+  - View item details on individual pages
+
+---
+
+## 📸 Example Page
 ![image](https://github.com/MiguelGGithub/FandomFitsPublic/assets/122931039/93e09694-7a28-4ee9-81c6-d4c28de7c6ef)
 
+---
 
-Technologies/Frameworks/Languages Used:
+## 🧰 Tech Stack
 
-- HTML, CSS, JavaScript
-- React
-- Next.js
-- Firebase/Firestore
+- **Frontend:** HTML, CSS, JavaScript
+- **Frameworks:** React
+- **Deployment:** Vercel
 
+---
 
+## 🧪 Installation & Setup (for development)
+
+```bash
+git clone https://github.com/your-username/FandomFitsPublic.git
+cd FandomFitsPublic
+npm install
+npm run dev
