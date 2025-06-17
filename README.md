@@ -39,9 +39,10 @@
 
 ## 🧰 Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript
-- **Frameworks:** React
+- **Frontend:** HTML, CSS, JavaScript, Bootstrap
+- **Frameworks:** React, Next.js
 - **Deployment:** Vercel
+- **Database:** Firebase/Firestore
 
 ---
 
